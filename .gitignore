@@ -1,0 +1,9 @@
+### bangbang93 template
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# node
+node_modules

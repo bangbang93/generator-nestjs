@@ -1,0 +1,28 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && nest build",
+    "dev": "nest start -w | bunyan"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bangbang93/utils": "^1.2.0",
+    "@nestjs/common": "^7.6.18",
+    "@nestjs/core": "^7.6.18",
+    "@nestjs/platform-express": "^7.6.18",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0"
+  }
+}

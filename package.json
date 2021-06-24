@@ -1,0 +1,21 @@
+{
+  "name": "@bangbang93/generator-nestjs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^5.3.0"
+  },
+  "files": [
+    "generators"
+  ],
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "@types/yeoman-generator": "^5.0.0"
+  }
+}
