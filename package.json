@@ -1,6 +1,6 @@
 {
   "name": "@bangbang93/generator-nestjs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
     "yeoman-generator": "^5.3.0"
   },
   "files": [
-    "generators"
+    "generators",
+    "templates"
   ],
   "devDependencies": {
     "@types/node": "^15.12.4",
