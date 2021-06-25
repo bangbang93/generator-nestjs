@@ -2,24 +2,24 @@ import { join } from 'path'
 import * as Generator from 'yeoman-generator'
 
 interface IAnswer {
-  grpc: boolean
+  appName: string
 }
 
 export default class NestjsGenerator extends Generator {
+  private answer: IAnswer
   public paths() {
     this.sourceRoot(join(__dirname, '../../templates/app'))
     this.log(this.templatePath())
   }
 
   public async prompting() {
-    const answer = await this.prompt<IAnswer>([
+    this.answer = await this.prompt<IAnswer>([
       {
-        type: 'confirm',
-        name: 'grpc',
-        message: 'is enable grpc?',
+        type: 'input',
+        message: 'app name',
+        name: 'appName'
       }
     ])
-    this.log(answer)
   }
 
   public async writing() {
@@ -28,6 +28,6 @@ export default class NestjsGenerator extends Generator {
         dot: true,
         ignore: ['**/node_modules']
       }
-    })
+    }, this.answer)
   }
 }
