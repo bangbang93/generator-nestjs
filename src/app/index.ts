@@ -29,5 +29,6 @@ export default class NestjsGenerator extends Generator {
         ignore: ['**/node_modules']
       }
     }, this.answer)
+    this.fs.copy(this.destinationPath('.env.defaults'), this.destinationPath('.env'))
   }
 }

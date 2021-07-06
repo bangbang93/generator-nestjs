@@ -91,3 +91,4 @@ public/
 /doc
 .vscode
 dist
+.env
