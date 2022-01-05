@@ -27,7 +27,7 @@
     "source-map-support": "^0.5.19"
   },
   "devDependencies": {
-    "@nestjs/cli": "^7.6.0",
+    "@nestjs/cli": "^8.1.6",
     "@types/bluebird": "^3.5.35",
     "@types/bunyan": "^1.8.6",
     "@types/ms": "^0.7.31",
