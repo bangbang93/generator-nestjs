@@ -30,5 +30,6 @@ export default class NestjsGenerator extends Generator {
       }
     }, this.answer)
     this.fs.copy(this.destinationPath('.env.defaults'), this.destinationPath('.env'))
+    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'))
   }
 }
