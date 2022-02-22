@@ -25,6 +25,6 @@ import {join} from 'path'
         },
       },
     }),
-  ]
+  ],
 })
 export class AppModule {}
