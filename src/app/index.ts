@@ -1,4 +1,4 @@
-import { join } from 'path'
+import {fileURLToPath, URL} from 'url'
 import Generator from 'yeoman-generator'
 
 interface IAnswer {
@@ -8,7 +8,7 @@ interface IAnswer {
 export default class NestjsGenerator extends Generator {
   private answer!: IAnswer
   public paths() {
-    this.sourceRoot(join(__dirname, '../../templates/app'))
+    this.sourceRoot(fileURLToPath(new URL('../../templates/app', import.meta.url)))
     this.log(this.templatePath())
   }
 
