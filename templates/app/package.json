@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "main": "dist/main.js",
+  "type": "module",
   "scripts": {
     "start": "node dist/main",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +13,7 @@
   "author": "bangbang93 <bangbang93@163.com>",
   "license": "MIT",
   "dependencies": {
+    "@bangbang93/service-errors": "^0.2.1",
     "@bangbang93/utils": "^6.6.3",
     "@nestjs/common": "^9.4.0",
     "@nestjs/config": "^2.3.1",

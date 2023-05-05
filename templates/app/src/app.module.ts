@@ -1,17 +1,17 @@
-import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe'
-import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter'
+import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe.js'
+import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter.js'
 import {Module} from '@nestjs/common'
 import {ConfigModule, ConfigService} from '@nestjs/config'
 import {BunyanLoggerModule} from 'nestjs-bunyan'
-import {join} from 'path'
+import {fileURLToPath} from 'url'
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: join(__dirname, '../../.env'),
+      envFilePath: fileURLToPath(new URL('../../.env', import.meta.url)),
       load: [() => ({
-        PROJECT_ROOT: join(__dirname, '../../'),
+        PROJECT_ROOT: fileURLToPath(new URL('../../', import.meta.url)),
         APP_NAME: '<%= appName %>',
       })],
     }),
