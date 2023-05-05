@@ -1,12 +1,12 @@
 import { join } from 'path'
-import * as Generator from 'yeoman-generator'
+import Generator from 'yeoman-generator'
 
 interface IAnswer {
   appName: string
 }
 
 export default class NestjsGenerator extends Generator {
-  private answer: IAnswer
+  private answer!: IAnswer
   public paths() {
     this.sourceRoot(join(__dirname, '../../templates/app'))
     this.log(this.templatePath())

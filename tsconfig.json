@@ -1,7 +1,6 @@
 {
+  "extends": ["@tsconfig/node18", "@tsconfig/esm"],
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2019",
     "inlineSourceMap": true,
     "outDir": "generators",
     "rootDir": "src"

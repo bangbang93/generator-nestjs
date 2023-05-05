@@ -1,8 +1,8 @@
-import 'source-map-support/register'
-import {bootstrap} from './index'
+import {bootstrap} from './index.js'
 
 bootstrap()
-.catch((err) => {
-  console.error(err)
-  process.exit(1)
-})
+  .catch((err) => {
+    // eslint-disable-next-line no-console
+    console.error(err)
+    process.exit(1)
+  })

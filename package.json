@@ -18,7 +18,10 @@
     "templates"
   ],
   "devDependencies": {
+    "@tsconfig/esm": "^1.0.3",
+    "@tsconfig/node18": "^2.0.0",
     "@types/node": "^15.12.4",
-    "@types/yeoman-generator": "^5.0.0"
+    "@types/yeoman-generator": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }
