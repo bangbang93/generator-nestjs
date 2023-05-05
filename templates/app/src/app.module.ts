@@ -1,3 +1,5 @@
+import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe'
+import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter'
 import {Module} from '@nestjs/common'
 import {ConfigModule, ConfigService} from '@nestjs/config'
 import {BunyanLoggerModule} from 'nestjs-bunyan'
@@ -25,6 +27,10 @@ import {join} from 'path'
         },
       },
     }),
+  ],
+  providers: [
+    ClassValidationPipe,
+    HttpExceptionFilter,
   ],
 })
 export class AppModule {}
