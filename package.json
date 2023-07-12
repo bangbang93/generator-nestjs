@@ -24,5 +24,8 @@
     "@types/node": "^15.12.4",
     "@types/yeoman-generator": "^5.0.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "workspaces": [
+    "templates/**/*"
+  ]
 }
