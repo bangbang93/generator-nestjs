@@ -1,8 +1,8 @@
 import {ClassValidationPipe} from '@bangbang93/utils/nestjs/class-validation.pipe.js'
 import {HttpExceptionFilter} from '@bangbang93/utils/nestjs/http-exception.filter.js'
 import {Module} from '@nestjs/common'
-import {ConfigModule, ConfigService} from '@nestjs/config'
-import {BunyanLoggerModule} from 'nestjs-bunyan'
+import {ConfigModule} from '@nestjs/config'
+import {LoggerModule} from 'nestjs-pino'
 import {fileURLToPath} from 'url'
 
 @Module({
@@ -15,19 +15,9 @@ import {fileURLToPath} from 'url'
         APP_NAME: '<%= appName %>',
       })],
     }),
-    BunyanLoggerModule.forRootAsync({
-      isGlobal: true,
-      bunyan: {
-        inject: [ConfigService],
-        useFactory(configService: ConfigService) {
-          return {
-            name: '<%= appName %>',
-            level: configService.get('LOGLEVEL', 'trace'),
-          }
-        },
-      },
-    }),
+    LoggerModule.forRoot()
   ],
+
   providers: [
     ClassValidationPipe,
     HttpExceptionFilter,
