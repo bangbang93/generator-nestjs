@@ -19,10 +19,13 @@
     "templates"
   ],
   "devDependencies": {
-    "@tsconfig/esm": "^1.0.3",
-    "@tsconfig/node18": "^2.0.0",
-    "@types/node": "^15.12.4",
+    "@bangbang93/eslint-config-recommended": "^2.0.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.8.2",
     "@types/yeoman-generator": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.1",
+    "@typescript-eslint/parser": "^8.12.1",
+    "eslint": "^9.13.0",
     "typescript": "^5.0.4"
   },
   "workspaces": [
