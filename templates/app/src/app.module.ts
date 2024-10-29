@@ -10,17 +10,16 @@ import {fileURLToPath} from 'url'
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: fileURLToPath(new URL('../../.env', import.meta.url)),
-      load: [() => ({
-        PROJECT_ROOT: fileURLToPath(new URL('../../', import.meta.url)),
-        APP_NAME: '<%= appName %>',
-      })],
+      load: [
+        () => ({
+          PROJECT_ROOT: fileURLToPath(new URL('../../', import.meta.url)),
+          APP_NAME: '<%= appName %>',
+        }),
+      ],
     }),
-    LoggerModule.forRoot()
+    LoggerModule.forRoot(),
   ],
 
-  providers: [
-    ClassValidationPipe,
-    HttpExceptionFilter,
-  ],
+  providers: [ClassValidationPipe, HttpExceptionFilter],
 })
 export class AppModule {}

@@ -27,7 +27,7 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@bangbang93/eslint-config-recommended": "^0.0.6",
+    "@bangbang93/eslint-config-recommended": "^2.0.0",
     "@nestjs/cli": "^10.3.2",
     "@tsconfig/esm": "^1.0.4",
     "@tsconfig/node18": "^18.2.0",
@@ -35,11 +35,11 @@
     "@types/bunyan": "^1.8.6",
     "@types/ms": "^0.7.31",
     "@types/node": "^20.4.1",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.39.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.1",
+    "@typescript-eslint/parser": "^8.12.1",
+    "eslint": "^9.13.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "pino-pretty": "^11.3.0",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
