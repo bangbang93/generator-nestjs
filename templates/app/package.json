@@ -17,7 +17,7 @@
     "@bangbang93/utils": "^6.10.0",
     "@nestjs/common": "^11.0.0",
     "@nestjs/config": "^4.0.0",
-    "@nestjs/core": "^11.0.0",
+    "@nestjs/core": "^11.1.18",
     "@nestjs/platform-express": "^11.0.0",
     "bluebird": "^3.7.2",
     "class-transformer": "^0.5.1",
