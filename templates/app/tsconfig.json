@@ -5,7 +5,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "inlineSourceMap": true,
-    "incremental": true,
+    "incremental": true
   },
   "exclude": ["node_modules", "dist"]
 }

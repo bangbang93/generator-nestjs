@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "lint": "eslint .",
+    "format": "prettier --write .",
     "prepublishOnly": "pnpm build"
   },
   "author": "",

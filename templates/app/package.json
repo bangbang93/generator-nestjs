@@ -8,7 +8,8 @@
     "start": "node dist/main",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && nest build",
-    "dev": "nest start -w | pino-pretty"
+    "dev": "nest start -w | pino-pretty",
+    "format": "prettier --write ."
   },
   "author": "bangbang93 <bangbang93@163.com>",
   "license": "MIT",
