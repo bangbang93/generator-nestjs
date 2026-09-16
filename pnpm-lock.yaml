@@ -33,6 +33,15 @@ importers:
       eslint:
         specifier: ^9.13.0
         version: 9.39.4(supports-color@7.2.0)
+      eslint-config-prettier:
+        specifier: ^8.10.2
+        version: 8.10.2(eslint@9.39.4(supports-color@7.2.0))
+      eslint-plugin-prettier:
+        specifier: ^5.5.6
+        version: 5.5.6(@types/eslint@9.6.1)(eslint-config-prettier@8.10.2(eslint@9.39.4(supports-color@7.2.0)))(eslint@9.39.4(supports-color@7.2.0))(prettier@3.9.6)
+      prettier:
+        specifier: ^3.9.6
+        version: 3.9.6
       typescript:
         specifier: ^5.0.4
         version: 5.9.3
@@ -4143,6 +4152,10 @@ snapshots:
       eslint: 9.39.4(supports-color@8.1.1)
       semver: 7.8.5
 
+  eslint-config-prettier@8.10.2(eslint@9.39.4(supports-color@7.2.0)):
+    dependencies:
+      eslint: 9.39.4(supports-color@7.2.0)
+
   eslint-config-prettier@8.10.2(eslint@9.39.4(supports-color@8.1.1)):
     dependencies:
       eslint: 9.39.4(supports-color@8.1.1)
@@ -4196,6 +4209,16 @@ snapshots:
       ignore: 5.3.2
       minimatch: 9.0.9
       semver: 7.8.5
+
+  eslint-plugin-prettier@5.5.6(@types/eslint@9.6.1)(eslint-config-prettier@8.10.2(eslint@9.39.4(supports-color@7.2.0)))(eslint@9.39.4(supports-color@7.2.0))(prettier@3.9.6):
+    dependencies:
+      eslint: 9.39.4(supports-color@7.2.0)
+      prettier: 3.9.6
+      prettier-linter-helpers: 1.0.1
+      synckit: 0.11.13
+    optionalDependencies:
+      '@types/eslint': 9.6.1
+      eslint-config-prettier: 8.10.2(eslint@9.39.4(supports-color@7.2.0))
 
   eslint-plugin-prettier@5.5.6(@types/eslint@9.6.1)(eslint-config-prettier@8.10.2(eslint@9.39.4(supports-color@8.1.1)))(eslint@9.39.4(supports-color@8.1.1))(prettier@3.9.6):
     dependencies:
