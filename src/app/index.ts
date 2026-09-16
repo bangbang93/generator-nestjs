@@ -1,3 +1,4 @@
+import path from "path";
 import { fileURLToPath } from "url";
 import Generator from "yeoman-generator";
 
@@ -25,16 +26,16 @@ export default class NestjsGenerator extends Generator {
   }
 
   public writing(): void {
-    this.copyTemplate(
-      this.templatePath(),
+    const templateRoot = this.templatePath();
+    this.fs.copyTpl(
+      [templateRoot, `!${path.join(templateRoot, "node_modules/**")}`],
       this.destinationPath(),
+      this.answer,
       {
         globOptions: {
           dot: true,
-          ignore: ["**/node_modules"],
         },
       },
-      this.answer,
     );
     this.fs.copy(
       this.destinationPath(".env.defaults"),
