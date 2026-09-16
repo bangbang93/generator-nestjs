@@ -8,3 +8,6 @@ gen
 # node
 node_modules
 generators
+
+# opencode
+.omo
