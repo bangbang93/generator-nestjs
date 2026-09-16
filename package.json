@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "packageManager": "pnpm@11.20.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
   "author": "",
   "license": "ISC",
